@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split,cross_val_score,KFold,GridSearchCV
-from sklearn.linear_model import LinearRegression, Lasso, Ridge, LogisticRegression, LogisticRegressionCV
-from sklearn.metrics import mean_squared_error,mean_absolute_error,adjusted_rand_score
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-from sklearn.metrics import classification_report
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import PolynomialFeatures
+from sklearn.model_selection import train_test_split, GridSearchCV
 import xgboost as xgb
 from sklearn.metrics import accuracy_score, make_scorer
 from sklearn.ensemble import RandomForestClassifier
