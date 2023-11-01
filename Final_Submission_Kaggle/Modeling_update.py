@@ -110,7 +110,7 @@ def ensemble_rf_xbg (training_data, test_data, categorical_columns= None, output
     xgboost_optimal = xgboost_grid_search.best_params_
     # Here we can update the model with the optimal parameters
     xgboost_optimal_model = xgboost.set_params(**xgboost_optimal)
-    # Finally, we can fit the model on the combto train and validation data
+    # Finally, we can fit the model on the combo train and validation data
     xgboost_optimal_model.fit(pd.concat([X_train, X_val]), pd.concat([y_train, y_val]))
 
     ############ Ensemble Model Predictions ############
