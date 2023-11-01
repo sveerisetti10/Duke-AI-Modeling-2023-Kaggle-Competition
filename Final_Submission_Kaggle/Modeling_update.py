@@ -6,9 +6,9 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split,cross_val_score,KFold,GridSearchCV
 from sklearn.linear_model import LinearRegression, Lasso, Ridge, LogisticRegression, LogisticRegressionCV
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import mean_squared_error,mean_absolute_error,accuracy_score, adjusted_rand_score
+from sklearn.metrics import mean_squared_error,mean_absolute_error,adjusted_rand_score
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-from sklearn.metrics import classification_report, accuracy_score
+from sklearn.metrics import classification_report
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import PolynomialFeatures
 import xgboost as xgb
